@@ -1,0 +1,60 @@
+/*-------------------------
+    Range Slider
+--------------------------*/
+
+.ui-slider-handle.ui-state-default.ui-corner-all {
+    background-color:  var(--color-primary);
+    border: medium none;
+    border-radius: 50%;
+    height: 13px;
+    width: 13px;
+    margin-left: -1px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.ui-slider-range.ui-widget-header.ui-corner-all {
+    background: var(--color-action) none repeat scroll 0 0;
+    border-radius: 0;
+    height: 4px;
+}
+
+.ui-widget.ui-widget-content {
+    background: var(--color-action) none repeat scroll 0 0;
+    border: medium none;
+    height: 4px;
+    position: relative;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    margin-left: 0;
+}
+
+.ui-slider-handle.ui-corner-all.ui-state-default.ui-state-focus {
+    outline: medium none;
+}
+
+
+.range-amount {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .title {
+        color: var(--color-primary);
+        font-weight: 600;
+        margin-right: 10px;
+    }
+    .price-amount {
+        height: auto;
+        border: none;
+        font-weight: 500;
+        color: var(--color-primary);
+        width: 100%;
+        &:focus {
+            outline: none;
+        }
+    }
+}

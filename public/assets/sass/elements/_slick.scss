@@ -1,0 +1,104 @@
+/*-------------------------
+    Slick  
+--------------------------*/
+.slide-gap-30 {
+    .slick-list {
+        margin: 0 -15px;
+        .slick-slide {
+            padding: 0 15px;
+        }
+    }
+}
+.slide-gap-10 {
+    .slick-list {
+        margin: 0 -5px;
+        .slick-slide {
+            padding: 0 5px;
+        }
+    }
+}
+
+// Custom Nav
+.slick-custom-nav {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 -10px;
+    @media only screen and (max-width: 767px) {
+        justify-content: flex-start;  
+        margin: 0 -5px 50px;
+
+    }
+    .slick-arrow {
+        position: initial;
+        transform: translate(0, 0);
+        margin: 0 10px;
+        @media only screen and (max-width: 767px) {
+            margin: 0 5px;   
+        }
+    }
+}
+
+.slick-arrow {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    background-color: var(--color-white);
+    border-radius: 50%;
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,.08);
+    transition: var(--transition);
+    @media only screen and (max-width: 767px) {
+        height: 40px;
+        width: 40px;   
+    }
+    &:before {
+        content: "\f30b";
+        font-family: var(--font-awesome);
+        color: var(--color-secondary);
+        font-weight: 600;
+        font-size: 18px;
+        opacity: 1;
+        transition: var(--transition);
+        @media only screen and (max-width: 767px) {
+            font-size: 15px;   
+        }
+    }
+    &:focus {
+        background-color: var(--color-action);
+        box-shadow: none;
+        &::before {
+            color: var(--color-primary);
+        }
+    }
+    &.slick-prev {
+        &:before {
+            content: "\f30a";
+        }
+    }
+    &:hover {
+        background-color: var(--color-action);
+        box-shadow: none;
+        &:before {
+            color: var(--color-primary);
+        }
+    }
+}
+
+.slick-arrow-default {
+     .slick-arrow {
+        z-index: 2;
+        background-color: var(--color-primary);
+        &:before {
+            color: var(--color-action);
+        }
+        &:hover {
+            background-color: var(--color-secondary);
+        }
+        &.slick-prev {
+            left: 25px;
+        }
+        &.slick-next {
+            right: 25px;
+        }
+    }
+}

@@ -1,0 +1,135 @@
+/*-------------------------
+    Classes
+-------------------------*/
+.bg-common {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-color-body-bg2 {
+    background-color: var(--color-body-bg2); 
+}
+.bg-color-light {
+    background-color: var(--color-white);
+}
+  
+ 
+.bg-color-primary {
+    background-color: var(--color-primary);
+}
+
+// Text Color
+.text-color-action {
+    color: var(--color-action) !important;
+}
+
+.border-line{
+    height: 1px;
+    background-color: #27272E;
+    width: 100%;
+
+}
+.border-top-1{
+    border-top: 1px solid var(--border-color);
+}
+.border-bottom-1{
+    border-bottom: 1px solid var(--border-color);
+}
+.border-top-full{
+    border-top: 1px solid var(--border-color);
+}
+.border-right-1{
+       border-right: 1px solid var(--border-color);
+}
+.border-all-1{
+       border: 1px solid var(--border-color);
+}
+
+.title-light{
+    color: var(--color-white);
+}
+
+.position-relative{
+    position: relative;
+}
+.anim-text {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-gradient(linear, left top, right top, from(#ec3737), color-stop(50%, #ec3737), color-stop(50%, #000000));
+    background-image: linear-gradient(to right, #ec3737, #ec3737 50%, #000000 50%);
+    background-size: 200% 100%;
+    background-position: 100%;
+}
+.anim-text-white {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-gradient(linear, left top, right top, from(#ec3737), color-stop(50%, #ec3737), color-stop(50%, #FFFFFF));
+    background-image: linear-gradient(to right, #ec3737, #ec3737 50%, #FFFFFF 50%);
+    background-size: 200% 100%;
+    background-position: 100%;
+}
+
+
+
+
+.anim-text:hover,.anim-text-white:hover {
+    -webkit-transition: all 0.8s cubic-bezier(0, 0, 0.23, 1);
+    transition: all 0.8s cubic-bezier(0, 0, 0.23, 1);
+    background-position: 0%;
+}
+
+
+@media not all and (min-resolution:.001dpcm) { 
+    @supports (-webkit-appearance:none) {
+        .anim-text {
+            -webkit-background-clip: unset;
+            -webkit-text-fill-color: unset;
+            background-image:unset;
+            background-image: unset;
+            background-size: unset;
+            background-position: unset;
+            color:#000000 !important;
+        }
+        .anim-text-white {
+            -webkit-background-clip: unset;
+            -webkit-text-fill-color: unset;
+            background-image:unset;
+            background-image: unset;
+            background-size: unset;
+            background-position: unset;
+            color: #ffffff !important;
+        }
+        .anim-text:hover,.anim-text-white:hover {
+            -webkit-background-clip: unset;
+            -webkit-text-fill-color: unset;
+            background-image:unset;
+            background-image: unset;
+            background-size: unset;
+            background-position: unset;
+            color:#ec3737 !important;
+        }
+    }
+}
+
+ .hide-mobile{
+
+ @media only screen and (max-width: 991.99px) {
+        display: none;
+     }
+ }
+
+ /* _grid.scss:34 */
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+.vh100{
+    height: 100vh;
+}

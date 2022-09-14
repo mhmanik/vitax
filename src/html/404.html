@@ -1,0 +1,36 @@
+{% extends 'app.html' %}
+
+{# Page Title #}
+{% block title %}vitax | 404 Not found{% endblock %}
+
+{# Custom Code In Head #}
+{% block header %}{% endblock %}
+
+{# Custom Code In Footer #}
+{% block footer %}{% endblock %}
+
+{# Body Class Add #}
+{% block attribute %}class="sticky-header"{% endblock %}
+
+{% block content %}
+<!--=====================================-->
+<!--=        Header Area Start       	=-->
+<!--=====================================-->
+{% include 'header/header-layout2.html' %}
+<!--=====================================-->
+<!--=           404 Area Start          =-->
+<!--=====================================-->
+<div class="error-page-area">
+    <div class="container">
+        <div class="error-content-wrap">
+            <div class="error-content">
+                <h1 class="title">404</h1>
+                <p>Get attention! try to go home easily with bellow button.</p>
+                <a href="index.html" class="home-btn btn-fill-primary"><i class="fas fa-home"></i>Go Back Home</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

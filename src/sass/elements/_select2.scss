@@ -1,0 +1,74 @@
+/*-------------------------
+    Select 2
+-------------------------*/
+.select2-container--classic .select2-selection--single {
+    background: transparent;
+    border: 2px solid #94bffc;
+    height: 60px;
+    border-radius: 50px;
+}
+
+.select2-container--classic .select2-selection--single .select2-selection__rendered {
+    line-height: 60px;
+    color: var(--color-white);
+    padding: 0 30px;
+    font-size: 16px;
+}
+
+.select2-container--classic .select2-selection--single:focus {
+    border: 2px solid #eaeaea;
+}
+
+.select2-container--classic .select2-selection--single .select2-selection__arrow {
+    background: none;
+    border-left: none;
+    height: 60px;
+    top: 0;
+    right: 4px;
+    width: 40px;
+}
+
+.select2-container--classic .select2-selection--single .select2-selection__arrow b {
+    border-color: var(--color-white) transparent transparent transparent;
+    border-width: 6px 5px 0 5px;
+
+}
+
+.select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    border-color: transparent transparent var(--color-white) transparent;
+    border-width: 0 5px 6px 5px;
+}
+
+// open dropdown
+.select2-container--classic.select2-container--open.select2-container--below .select2-selection--single {
+    background: transparent;
+    border: 2px solid #94bffc;
+    border-radius: 50px;
+}
+
+.select2-container--classic.select2-container--open.select2-container--above .select2-selection--single {
+    border-color: #94bffc;
+    background: transparent;
+    border-top: 1px solid #94bffc;
+    border-radius: 50px;
+}
+
+.select2-container--classic.select2-container--open .select2-dropdown {
+    border-color: #eaeaea;
+    position: inherit !important;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.select2-container--classic .select2-results__option--highlighted[aria-selected] {
+    background-color: var(--color-primary);
+}
+
+.select2-results__option {
+    padding: 5px 20px;
+    font-size: 15px;
+}
+
+.select2-container--classic .select2-selection--single .select2-selection__placeholder {
+    color: var(--color-white);
+}
