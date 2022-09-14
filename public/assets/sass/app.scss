@@ -1,0 +1,104 @@
+/*--------------------------------------
+Template Name: Vitax
+Template URL: https://www.abctechweb.com/html/vitax
+Description: Vitax Bootstrap HTML5 Template
+Author: Abctechweb
+Author URL: https://www.abctechweb.com 
+Version: 1.0.0
+
+========================================   
+CSS INDEX
+========================================
+|___ Default Styles
+|	|___ Variables
+|	|___ Reset
+|	|___ Typography
+|	|___ Forms 
+|	|___ Spacing 
+|	|___ Classes 
+|
+|___ Elements Styles
+|	|___ Back To Top
+|	|___ Button
+|	|___ Pagination 
+|	|___ Range Slider 
+|	|___ Section
+|	|___ Select 2
+|	|___ Slick 
+|
+|___Template Styles
+|	|___ About Us
+|	|___ Banner
+|	|___ Brand
+|	|___ Call To Action
+|	|___ Common Pages
+|	|___ Contact
+|	|___ FAQ
+|	|___ Poster
+|	|___ Pricing Plan
+|	|___ Process
+|	|___ Progress
+|	|___ Project
+|	|___ Service
+|	|___ Shop
+|	|___ Team
+|	|___ Testimonial
+|	|___ Why Choose
+|	|___ Widget
+|
+|___Blocks Styles
+|	|___ Header Styles
+|	|___ Blog Styles
+|	|___ Footer Styles
+|
+--------------------------------------*/
+
+/*======================================
+1. Default Styles 
+========================================*/
+@import "dark-style/dark-version";
+@import "default/mixin";
+@import "default/variable";
+@import "default/reset";
+@import "default/typography";
+@import "default/form";
+@import "default/spacing";
+@import "default/classes";
+
+/*======================================
+2. Elements Styles 
+========================================*/
+@import "elements/back-to-top";
+@import "elements/button";
+@import "elements/pagination";
+@import "elements/range-slider";
+@import "elements/section";
+@import "elements/select2";
+@import "elements/slick";
+
+/*======================================
+3. Template Styles 
+========================================*/
+@import "template/about";
+@import "template/banner";
+@import "template/brand";
+@import "template/call-to-action";
+@import "template/common-pages";
+@import "template/contact";
+
+
+@import "template/project";
+@import "template/service";
+
+@import "template/team";
+@import "template/testimonial";
+
+@import "template/widget";
+
+/*======================================
+4. Blocks Styles
+========================================*/
+@import "header/header";
+@import "blog/blog";
+@import "footer/footer";
+

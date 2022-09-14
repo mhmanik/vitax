@@ -1,0 +1,61 @@
+{% extends 'app.html' %}
+
+{# Page Title #}
+{% block title %}Vitax | Home 3{% endblock %}
+
+{# Custom Code In Head #}
+{% block header %}{% endblock %}
+
+{# Custom Code In Footer #}
+{% block footer %}{% endblock %}
+
+{# Body Class Add #}
+{% block attribute %}class="sticky-header active-dark-mode onepage-template" data-bs-spy="scroll" data-bs-target="#onepagenav"{% endblock %}
+ 
+
+{% block content %}
+<!--=====================================-->
+<!--=        Header Area Start       	=-->
+<!--=====================================-->
+{% include 'header/header-layout3.html' %}
+<!--=====================================-->
+
+<!--=          Banner Area Start        =-->
+<!--=====================================-->
+{% include 'sections/banner/hero-banner-1.html' %}
+<!--=====================================-->
+
+ <!--=       Services Area Start         =-->
+<!--=====================================-->
+{% include 'sections/service/service-layout7.html' %}
+
+ <!--=       Services Area Start         =-->
+<!--=====================================-->
+{% include 'sections/about/about-layout2.html' %}
+
+<!--=        Project Area Start         =-->
+<!--=====================================-->
+{% include 'sections/project/project-layout5.html' %}
+
+ <!--=       Services Area Start         =-->
+<!--=====================================-->
+{% include 'sections/call-to-action/call-to-action3.html' %}
+
+<!--=      Estimate Form Area Start     =-->
+<!--=====================================-->
+{% include 'sections/testimonial/testimonial-layout3.html' %}
+
+<!--=      Estimate Form Area Start     =-->
+<!--=====================================-->
+{% include 'blog/blog-layout2.html' %}
+
+<!--=      Estimate Form Area Start     =-->
+<!--=====================================-->
+{% include 'sections/contact/contact-layout4.html' %}
+
+<!--=        Footer Area Start       	=-->
+<!--=====================================-->
+{% include 'footer/footer-layout2.html' %}
+	
+
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends 'app.html' %}
+
+{# Page Title #}
+{% block title %}Vitax | Home 1{% endblock %}
+
+{# Custom Code In Head #}
+{% block header %}{% endblock %}
+
+{# Custom Code In Footer #}
+{% block footer %}{% endblock %}
+
+{# Body Class Add #}
+{% block attribute %}class="sticky-header onepage-template active-dark-mode"{% endblock %}
+
+{% block content %}
+<!--=====================================-->
+<!--=        Header Area Start       	=-->
+<!--=====================================-->
+{% include 'header/header-layout5.html' %}
+<!--=====================================-->
+
+<!--=          Banner Area Start        =-->
+<!--=====================================-->
+{% include 'sections/banner/hero-banner-3.html' %}
+<!--=====================================-->
+
+ <!--=       Services Area Start         =-->
+<!--=====================================-->
+{% include 'sections/service/service-layout1.html' %}
+
+ <!--=       Services Area Start         =-->
+<!--=====================================-->
+{% include 'sections/about/about-layout1.html' %}
+
+<!--=        Project Area Start         =-->
+<!--=====================================-->
+{% include 'sections/project/project-layout2.html' %}
+
+<!--=      Estimate Form Area Start     =-->
+<!--=====================================-->
+{% include 'sections/testimonial/testimonial-layout2.html' %}
+
+<!--=      Estimate Form Area Start     =-->
+<!--=====================================-->
+{% include 'sections/contact/contact-layout1.html' %}
+
+<!--=        Footer Area Start       	=-->
+<!--=====================================-->
+{% include 'footer/footer-layout1.html' %}
+	
+
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends 'app.html' %}
+
+{# Page Title #}
+{% block title %}Vitax | Coming Soon{% endblock %}
+
+{# Custom Code In Head #}
+{% block header %}{% endblock %}
+
+{# Custom Code In Footer #}
+{% block footer %}{% endblock %}
+
+{# Body Class Add #}
+{% block attribute %}class="sticky-header"{% endblock %}
+
+{% block content %}
+<!--=====================================-->
+<!--=      Coming Soon Area Start       =-->
+<!--=====================================-->
+<div class="coming-page-area">
+    <div class="container">
+        <div class="coming-content-wrap">
+            <div class="coming-content">
+                <div class="logo">
+                    <img src="assets/media/logo-large.png" alt="Logo">
+                </div>
+                <div class="section-heading">
+                    <span class="subtitle">Get attention! try to go home easily with bellow button.</span>
+                    <h1 class="title">Coming Soon</h1>
+                </div>
+                <div class="countdown"></div>
+                <form class="subscribe-form">
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Enter email address">
+                        <button class="btn-fill-primary subscribe-btn" type="button"><i class="far fa-paper-plane"></i> Subscribe Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

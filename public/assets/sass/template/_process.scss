@@ -1,0 +1,91 @@
+/*-------------------------
+    Process
+-------------------------*/
+.work-process {
+    text-align: center;
+    margin-bottom: 40px;
+    .icon-wrap {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 35px;
+        z-index: 1;
+        &::before {
+            content: "";
+            height: 100%;
+            width: 100%;
+            background-color: var(--color-primary);
+            border-radius: 50%;
+            position: absolute;
+            top: 10px;
+            left: 0;
+            z-index: -1;
+            visibility: hidden;
+            opacity: 0;
+            transition: var(--transition);
+        }
+        .icon {
+            text-align: center;
+            display: block;
+            height: 140px;
+            width: 140px;
+            line-height: 160px;
+            background-color: var(--color-white);
+            border-radius: 50%;
+            transition: var(--transition);
+            i {
+                font-size: 70px;
+                color: var(--color-secondary);
+                transition: var(--transition);
+            }
+        }
+        .sl-number {
+            text-align: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            background-color: var(--color-action);
+            border-radius: 50%;
+            color: var(--color-primary);
+            font-weight: 700;
+            transition: var(--transition);
+        }
+    }
+    .content {
+        .title {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: var(--font-body-2);
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+    &:hover {
+        .icon-wrap {
+            &::before {
+                visibility: visible;
+                opacity: 1;
+                left: 10px;
+            }
+            .icon {
+                background-color: var(--color-action);
+                i {
+                    color: var(--color-primary);
+                }
+            }
+            .sl-number {
+                background-color: var(--color-white);
+            }
+        }
+    }
+    &.top-padding {
+        padding-top: 60px;
+        @media only screen and (max-width: 991px) {
+            padding-top: 0;   
+        }
+    }
+}
